@@ -69,26 +69,6 @@ It simulates real-world procurement and manufacturing decisions by combining sup
 ```DAX
 Full Cost (All) "Buy" = MINX(FILTER(Quotes, Quotes[Volume] <= MIN('Scenario Volumes(All)'[Scenario Volume])), (Quotes[Unit_Cost] * MIN('Scenario Volumes(All)'[Scenario Volume])) + Quotes[Non_recurring_expenses])
 ```
-🗂 Data Model Overview
-
-### The data model follows a star schema to ensure performance, clarity, and scalability.
-
-## Fact Tables
-
-- Supplier Quotes
-
-- Scenario Volumes
-
-- Internal Manufacturing Costs
-
-## Dimension Tables
-
-- Product
-
-- Supplier
-
-- Machine
-
 ## 🛠 Tools & Technologies
 
 - Power BI Desktop
